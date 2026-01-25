@@ -9,3 +9,6 @@ function checkPassword() {
         document.getElementById("error-msg").textContent = "Incorrect password! Try again.";
     }
 }
+function playMusic() {
+    const music = document.getElementById("bg-music");
+    music.play();
