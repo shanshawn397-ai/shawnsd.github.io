@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message for Dad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Password Protection -->
+<div id="password-container">
+    <h2>Enter Password to Access</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPasswordMessage()">Enter</button>
+    <p id="error-msg"></p>
+</div>
+
+<!-- Main Content -->
+<div id="main-content" class="hidden">
+    <header>
+        <h1>Dear Dad ❤️</h1>
+        <p>This message is just for you...</p>
+    </header>
+
+    <section class="message">
+        <p>
+            Happy Birthday to the most loving, patient, and caring father!  
+            You have always been our guide, our support, and the heart of our family.  
+            Thank you for being a wonderful vet, a great father, and an amazing family man.  
+            We love you so much! 🐾💚
+        </p>
+    </section>
+
+    <section class="gallery">
+        <h2>Some of Our Favorite Memories</h2>
+        <div class="images">
+            <img src="images/family1.jpg" alt="Family">
+            <img src="images/pet1.jpg" alt="Pet">
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by your child</p>
+        <p><a href="index.html" style="color:#556B2F;">← Back to Home</a></p>
+    </footer>
+</div>
+
+<script>
+const password = "family123"; // same password as main page
+
+function checkPasswordMessage() {
+    const input = document.getElementById("password").value;
+    if(input === password){
+        document.getElementById("password-container").style.display = "none";
+        document.getElementById("main-content").classList.remove("hidden");
+    } else {
+        document.getElementById("error-msg").textContent = "Incorrect password! Try again.";
+    }
+}
+</script>
+
+</body>
+</html>
