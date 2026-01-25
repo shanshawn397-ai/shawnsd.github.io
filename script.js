@@ -1,4 +1,4 @@
-const password = "family123"; // Change this to whatever you want
+const password = "feb1"; // Change this to whatever you want
 
 function checkPassword() {
     const input = document.getElementById("password").value;
