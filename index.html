@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet Dad's Family Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Password Protection -->
+<div id="password-container">
+    <h2>Enter Password to Access</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error-msg"></p>
+</div>
+
+<!-- Main Content -->
+<div id="main-content" class="hidden">
+    <header>
+        <h1>Happy Birthday, Dad!</h1>
+        <p>Our loving vet, patient guide, and amazing father ❤️</p>
+    </header>
+
+    <section class="bio">
+        <h2>About Him</h2>
+        <ul>
+            <li>Patient & Caring Vet</li>
+            <li>Family Advisor & Supporter</li>
+            <li>Great Father & Family Man</li>
+            <li>Loves Pets ❤️</li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+        <h2>Family & Pets</h2>
+        <div class="images">
+            <img src="images/dad.jpg" alt="Dad">
+            <img src="images/family1.jpg" alt="Family">
+            <img src="images/pet1.jpg" alt="Pet">
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by your child</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
