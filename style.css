@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #556B2F; /* Olive green */
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.bio ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.bio li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    max-width: 300px;
+    border-radius: 15px;
+    border: 3px solid #556B2F;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#password-container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#password-container input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+#password-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #556B2F;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#password-container button:hover {
+    background-color: #3d4f1f;
+}
+
+#error-msg {
+    color: red;
+    margin-top: 10px;
+}
