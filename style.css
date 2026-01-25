@@ -5,107 +5,60 @@
     box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: #556B2F; /* olive green */
-    line-height: 1.6;
+    font-family: "Segoe UI", sans-serif;
+    background: #ffffff;
+    color: #556B2F;
 }
 
-/* ===== HIDDEN ===== */
-.hidden {
-    display: none;
-}
-
-/* ===== PASSWORD SCREEN ===== */
+/* PASSWORD */
 #password-container {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-#password-container h2 {
-    margin-bottom: 20px;
+    gap: 15px;
 }
 
 #password-container input {
     padding: 10px;
-    font-size: 1em;
-    width: 220px;
-    border: 2px solid #556B2F;
+    width: 200px;
     border-radius: 8px;
+    border: 2px solid #556B2F;
 }
 
 #password-container button {
-    margin-top: 15px;
-    padding: 10px 30px;
-    font-size: 1em;
-    background-color: #556B2F;
-    color: white;
+    padding: 10px 25px;
     border: none;
+    background: #556B2F;
+    color: white;
     border-radius: 20px;
     cursor: pointer;
 }
 
-#password-container button:hover {
-    background-color: #3d4f1f;
-}
-
 #error-msg {
-    margin-top: 15px;
-    color: #a00000;
+    color: red;
 }
 
-/* ===== HEADER ===== */
+.hidden {
+    display: none;
+}
+
+/* HEADER */
 header {
     text-align: center;
-    padding: 50px 20px 30px;
+    padding: 40px 20px;
 }
 
 header h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.1em;
-}
-
-/* ===== MUSIC SECTION ===== */
-.music-section {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.music-section button {
-    background-color: #556B2F;
-    color: #ffffff;
-    border: none;
-    padding: 10px 28px;
-    font-size: 1em;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-.music-section button:hover {
-    background-color: #3d4f1f;
-}
-
-/* ===== ABOUT SECTION ===== */
+/* ABOUT */
 .bio {
-    max-width: 800px;
-    margin: auto;
-    padding: 30px 20px;
     text-align: center;
-}
-
-.bio h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
+    padding: 30px 20px;
 }
 
 .bio ul {
@@ -113,84 +66,43 @@ header p {
 }
 
 .bio li {
-    font-size: 1.15em;
     margin: 8px 0;
+    font-size: 1.1em;
 }
 
-/* ===== BUTTON LINK ===== */
+/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 20px;
-    background-color: #556B2F;
-    color: white;
     padding: 10px 25px;
+    background: #556B2F;
+    color: white;
     text-decoration: none;
     border-radius: 20px;
-    font-size: 1em;
 }
 
-.btn:hover {
-    background-color: #3d4f1f;
-}
-
-/* ===== GALLERY ===== */
+/* GALLERY */
 .gallery {
     padding: 40px 20px;
     text-align: center;
 }
 
-.gallery h2 {
-    margin-bottom: 30px;
-    font-size: 2em;
-}
-
 .gallery-grid {
     display: flex;
+    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
 }
 
-.gallery-card {
+.gallery-grid img {
     width: 260px;
-    background-color: #f9f9f9;
-    border-radius: 20px;
+    border-radius: 18px;
     border: 2px solid #556B2F;
-    overflow: hidden;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-card img {
-    width: 100%;
-    display: block;
-}
-
-.gallery-card p {
-    padding: 12px;
-    font-weight: 600;
-}
-
-.gallery-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.2);
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 25px 10px;
-    font-size: 0.95em;
-    color: #556B2F;
+    padding: 25px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    .gallery-card {
-        width: 90%;
-    }
-}
