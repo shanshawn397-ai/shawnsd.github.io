@@ -1,5 +1,5 @@
 // ===== PASSWORD SETTINGS =====
-const password = "family123"; // you can change this
+const password = "family123"; // change this
 
 function checkPassword() {
     const input = document.getElementById("password").value;
@@ -8,19 +8,14 @@ function checkPassword() {
     if (input === password) {
         document.getElementById("password-container").style.display = "none";
         document.getElementById("main-content").classList.remove("hidden");
+
+        // AUTO START MUSIC
+        const music = document.getElementById("bg-music");
+        music.volume = 0.5; // soft sound
+        music.play();
+
         errorMsg.textContent = "";
     } else {
-        errorMsg.textContent = "Incorrect password. Please try again.";
-    }
-}
-
-// ===== MUSIC CONTROL =====
-function playMusic() {
-    const music = document.getElementById("bg-music");
-
-    if (music.paused) {
-        music.play();
-    } else {
-        music.pause();
+        errorMsg.textContent = "Wrong password. Try again.";
     }
 }
