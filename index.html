@@ -3,64 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vet Dad's Family Website</title>
+    <title>Happy Birthday Dad</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Password Protection -->
+<!-- PASSWORD SCREEN -->
 <div id="password-container">
-    <h2>Enter Password to Access</h2>
+    <h2>Family Access</h2>
     <input type="password" id="password" placeholder="Enter password">
+    <br><br>
     <button onclick="checkPassword()">Enter</button>
     <p id="error-msg"></p>
 </div>
 
-<!-- Main Content -->
+<!-- MAIN CONTENT -->
 <div id="main-content" class="hidden">
+
+    <!-- HEADER -->
     <header>
-        <h1>Happy Birthday, Achaa!</h1>
-        <p>Our loving vet, and amazing father ❤️</p>
+        <h1>Happy Birthday, Dad 💚</h1>
+        <p>Our patient vet, loving guide, and the heart of our family</p>
     </header>
-<section class="music-section">
-    <h2>Background Music</h2>
 
-    <button onclick="playMusic()">🎵 Play Music</button>
-
-    <audio id="bg-music" loop>
-        <source src="music/music.mp3" type="audio/mpeg">
-    </audio>
-</section>
-
-    <section class="bio">
-        <h2>To The Heart of Our Family</h2>
-        <ul>
-            <li>In your profession you're the best I've seen and known and my interest on </li>
-               <li> this subject is rooted on how I've seen you love doing your job. You're always so</li>
-               <li> gentle and patient with your juniors and internees and you also know how to handle any </li>
-                <li>stressful situation and manage it effectively. That's something I always look upto. </li>
-               <li> Pinne ee prandhanmar aaya clients ine okke deal chyunnath kandittondallo athum</li>
-                <li>kand padikkenda karym thanne aan😂 engne sadhikkunnu? You're my role model on </li>
-               <li> these things and you are always looking for new things to learn and explore.</li> 
-                <li>So in general you are great at what you do</li>
-            <li>Loves Pets ❤️</li>
-        </ul>
+    <!-- MUSIC (AFTER HEADER) -->
+    <section class="music-section">
+        <button onclick="playMusic()">🎵 Play Music</button>
+        <audio id="bg-music" loop>
+            <source src="music/music.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
     </section>
 
+    <!-- ABOUT -->
+    <section class="bio">
+        <h2>The Heart of Our Family</h2>
+        <ul>
+            <li>Patient & Caring Vet</li>
+            <li>Personal Advisor & Doubt Clearer</li>
+            <li>Supporter in Every Situation</li>
+            <li>Amazing Father & Family Man</li>
+            <li>Loves Animals 🐾</li>
+        </ul>
+
+        <p style="text-align:center; margin-top:20px;">
+            <a href="message.html" class="btn">Special Message for You 💌</a>
+        </p>
+    </section>
+
+    <!-- GALLERY -->
     <section class="gallery">
-        <h2>we</h2>
-        <div class="images32">
-            <img src="images32/dad.jpg" alt="Dad">
-            <img src="images32/family1.jpg" alt="Family1">
-            <img src="images32/them.jpg" alt="Pet">
+        <h2>Family & Pets</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="images/dad.jpg" alt="Dad">
+                <p>Dad ❤️</p>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/family1.jpg" alt="Family">
+                <p>Family</p>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/pet1.jpg" alt="Pet">
+                <p>Our Pets 🐾</p>
+            </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>A gift from the heart 💕For the best dad ever 🐾</p>
+        <p>With love from your family 💚</p>
     </footer>
+
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
+
 </body>
 </html>
