@@ -1,5 +1,5 @@
 // ===== PASSWORD SETTINGS =====
-const password = "family123"; // change this
+const password = "vento1729"; // change this
 
 function checkPassword() {
     const input = document.getElementById("password").value;
