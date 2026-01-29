@@ -9,13 +9,13 @@ function checkPassword() {
         document.getElementById("password-container").style.display = "none";
         document.getElementById("main-content").classList.remove("hidden");
 
-        // AUTO START MUSIC
+       // 🎵 ESSENTIAL MUSIC PLAY
         const music = document.getElementById("bg-music");
-        music.volume = 0.5; // soft sound
-        music.play();
-
-        errorMsg.textContent = "";
+        music.volume = 0.5;
+        music.play().catch(err => {
+            console.log("Audio play blocked:", err);
+        });
     } else {
-        errorMsg.textContent = "Wrong password. Try again.";
+        error.innerText = "Wrong password 😕";
     }
 }
