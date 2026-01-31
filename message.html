@@ -16,6 +16,13 @@
     <p id="error-msg"></p>
 </div>
 
+<!-- ✅ MUSIC ADDED (hidden, auto loop) -->
+<audio id="bg-music" loop>
+    <source src="music/memories.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+<!-- ✅ END MUSIC -->
+
 <!-- Main Content -->
 <div id="main-content" class="hidden">
     <header>
@@ -58,9 +65,18 @@ const password = "Janu11"; // same password as main page
 
 function checkPasswordMessage() {
     const input = document.getElementById("password").value;
+    const music = document.getElementById("bg-music");
+
     if(input === password){
         document.getElementById("password-container").style.display = "none";
         document.getElementById("main-content").classList.remove("hidden");
+
+        // 🎵 PLAY MUSIC (ESSENTIAL PART)
+        music.volume = 0.5;
+        music.play().catch(() => {
+            console.log("Autoplay blocked until interaction");
+        });
+
     } else {
         document.getElementById("error-msg").textContent = "Incorrect password! Try again.";
     }
